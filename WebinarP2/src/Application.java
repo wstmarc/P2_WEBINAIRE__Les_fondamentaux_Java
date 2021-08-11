@@ -4,7 +4,7 @@ public class Application {
 
     private final String path = ".\\WebinarP2\\src\\resources\\";
 
-    public void readFile() throws IOException {
+    public void readFile()  {
         //Remplacer le nom du fichier à lire ici
         String fileToRead = "longText";
         String completePath = path + fileToRead;
