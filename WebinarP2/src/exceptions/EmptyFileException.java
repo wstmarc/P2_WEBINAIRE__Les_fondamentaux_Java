@@ -1,13 +1,13 @@
 package exceptions;
 
 /**
- * EmptyFileException est une classe d'exception personnalisée.
+ * EmptyFileException is a custom exception class.
  * */
 public class EmptyFileException extends Exception {
 
 	public EmptyFileException(String error) {
 		
-		super("Fichier vide");
+		super("The file is empty !!!");
 		
 	}
 	

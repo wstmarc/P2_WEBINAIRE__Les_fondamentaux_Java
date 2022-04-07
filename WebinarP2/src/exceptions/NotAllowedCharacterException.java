@@ -1,13 +1,13 @@
 package exceptions;
 
 /**
- * NotAllowedCharacter est une classe d'exception personnalisée.
+ * NotAllowedCharacterException is a custom exception class.
  * */
 public class NotAllowedCharacterException extends Exception {
 
 	public NotAllowedCharacterException(String error) {
 		
-		super("Caractère non autorisé");
+		super("Numbers are not allowed characters !!!");
 		
 	}
 	
