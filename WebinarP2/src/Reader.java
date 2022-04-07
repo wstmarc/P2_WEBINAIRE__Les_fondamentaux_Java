@@ -12,7 +12,7 @@ public class Reader {
     private final String path = ".\\WebinarP2\\src\\resources\\";
     
     //Replace the file name to read here:
-    String fileToRead = "symptoms";
+    public String fileToRead = "symptoms";
 
     
     /**
@@ -36,11 +36,11 @@ public class Reader {
             }
         }
         catch (FileNotFoundException e) {
-        	System.out.println("File Not Found Exception");
+        	System.err.println("The file was not found !!!");
         	System.err.println("Error : " + e);
         }
         catch (EmptyFileException e) {
-        	System.out.println("Empty File Exception");
+        	System.err.println("The file is empty !!!");
         	System.err.println("Error : " + e);
 		}
     }
@@ -80,15 +80,15 @@ public class Reader {
             }
         }
         catch (FileNotFoundException e) {
-        	System.out.println("File Not Found Exception");
+        	System.err.println("The file was not found !!!");
         	System.err.println("Error : " + e);
         }
         catch (EmptyFileException e) {
-        	System.out.println("Empty File Exception");
+        	System.err.println("The file is empty !!!");
         	System.err.println("Error : " + e);
 		}
         catch (NotAllowedCharacterException e) { 
-        	System.out.println("Not Allowed Character");
+        	System.err.println("Numbers are not allowed characters !!!");
         	System.err.println("Error : " + e);
         }
         return occurrence;
